@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add Product - ShopEase</title>
+      <link rel="icon" type="image/png" href="/images/logo.png">
+
+      <title>Add Product - ShopEase</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -713,38 +715,52 @@
             <span th:errors="*{stock}" class="form-error"></span>
           </div>
 
-          <div class="form-group">
-            <label for="price">Price (₹)</label>
-            <input
-              type="text"
-              id="price"
-              th:field="*{price}"
-              class="form-control"
-              placeholder="Enter product price"
-              required
-            />
-            <span th:errors="*{price}" class="form-error"></span>
-          </div>
+            <div class="form-group">
+                <label for="price">Price (₹)</label>
+                <input
+                        type="number"
+                        id="price"
+                        th:field="*{price}"
+                        class="form-control"
+                        placeholder="Enter product price"
+                        min="1"
+                        step="1"
+                        required
+                />
+                <span th:errors="*{price}" class="form-error"></span>
+            </div>
 
-          <div class="form-group">
-            <label for="category">Category</label>
-            <select
-              id="category"
-              th:field="*{category}"
-              class="form-control"
-              required
-            >
-              <option value="">Select a category</option>
-              <option value="electronics">Electronics</option>
-              <option value="fashion">Fashion</option>
-              <option value="grocery">Grocery</option>
-              <option value="kitchen">Kitchen</option>
-              <option value="furniture">Furniture</option>
-            </select>
-            <span th:errors="*{category}" class="form-error"></span>
-          </div>
 
-          <div class="form-actions">
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select
+                        id="category"
+                        th:field="*{category}"
+                        class="form-control"
+                        required
+                >
+                    <option value="">Select a category</option>
+
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home-kitchen">Home & Kitchen</option>
+                    <option value="appliances">Appliances</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="beauty-health">Beauty & Health</option>
+                    <option value="books">Books</option>
+                    <option value="sports">Sports & Fitness</option>
+                    <option value="toys">Toys & Games</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="baby">Baby Products</option>
+                    <option value="pets">Pet Supplies</option>
+                    <option value="others">Others</option>
+
+                </select>
+                <span th:errors="*{category}" class="form-error"></span>
+            </div>
+
+
+            <div class="form-actions">
             <a href="/merchant/home" class="btn btn-secondary">
               <i class="fas fa-arrow-left"></i> Back to Dashboard
             </a>

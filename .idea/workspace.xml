@@ -5,10 +5,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86bb5e79-3793-4406-8261-31fa6635d9d5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/config/CloudinaryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/helper/CloudinaryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/helper/CloudinaryHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/service/MerchantServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jsp/ecommerce/service/MerchantServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin-orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin-orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin-otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin-otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer-manage-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer-manage-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer-otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer-otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/customer-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/customer-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/edit-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/edit-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/email-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/email-template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manage-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manage-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/merchant-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/merchant-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/merchant-manage-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/merchant-manage-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/merchant-otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/merchant-otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/merchant-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/merchant-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/order-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/order-history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/track-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/track-order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/view-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/view-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/view-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.jsp/ecommerce/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.jsp/ecommerce/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/EcommerceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/EcommerceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/GeneralController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/GeneralController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/MerchantController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/controller/MerchantController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/OrderStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/OrderStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/PaymentStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/PaymentStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/ProductDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/ProductDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Merchant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Merchant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/OrderItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Orders.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Orders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/AES.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/AES.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/CloudinaryHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/CloudinaryHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/EmailSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/EmailSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/MessageRemover.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/MessageRemover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/RazorPayHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/helper/RazorPayHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/AdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/CustomerRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/CustomerRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/MerchantRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/MerchantRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/OrderItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/OrderItemRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/OrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/OrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/PaymentRepsoitory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/PaymentRepsoitory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/repository/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/AdminServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/CustomerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/GeneralService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/GeneralService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/GeneralServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/GeneralServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/MerchantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/MerchantService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/MerchantServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jsp/ecommerce/service/MerchantServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/add-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/add-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin-orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin-orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin-otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin-otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin-overview.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin-overview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/admin-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/admin-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer-manage-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer-manage-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer-otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer-otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/customer-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/customer-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/edit-product.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/edit-product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/email-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/email-template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/manage-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/manage-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/merchant-home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/merchant-home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/merchant-manage-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/merchant-manage-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/merchant-otp.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/merchant-otp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/merchant-register.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/merchant-register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/order-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/order-history.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/payment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/track-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/track-order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/view-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/view-cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/view-products.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/view-products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/jsp/ecommerce/EcommerceApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/jsp/ecommerce/EcommerceApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +140,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="366p2GbVzsOcOPdMvpaMC4cAKP4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,12 +151,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.EcommerceApplication.executor": "Run",
+    "Maven.ecommerce [install].executor": "Run",
+    "Maven.ecommerce [package].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Shell Script.mvnw.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/pawankumar/Documents/ecommerce-m133",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",

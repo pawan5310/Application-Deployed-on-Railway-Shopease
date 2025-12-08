@@ -222,8 +222,14 @@ public class MerchantServiceImpl implements MerchantService {
 	public String deleteById(Long id, HttpSession session) {
 		Merchant merchant = (Merchant) session.getAttribute("merchant");
 		if (merchant != null) {
-			productRepository.deleteById(id);
-			session.setAttribute("pass", "Product Deleted Success");
+			//productRepository.deleteById(id);
+            Product product = productRepository.findById(id).orElseThrow();
+
+            cloudinaryHelper.deleteImageByUrl(product.getImageUrl());
+
+            productRepository.deleteById(id);
+
+            session.setAttribute("pass", "Product Deleted Success");
 			return "redirect:/merchant/manage-products";
 		} else {
 			session.setAttribute("fail", "Invalid Session, First Login to Access");
