@@ -1,47 +1,49 @@
 package com.jsp.ecommerce.helper;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
 import com.jsp.ecommerce.dto.UserDto;
-
-import jakarta.mail.internet.MimeMessage;
+import com.resend.Resend;
+import com.resend.services.emails.model.SendEmailRequest;
 
 @Component
 public class EmailSender {
 
-    @Autowired
-    private JavaMailSender mailSender;
+    private final Resend resend;
 
-    @Autowired
-    private TemplateEngine engine;
+    private final TemplateEngine engine;
 
-    @Value("${spring.mail.username}")
-    private String from;
+    public EmailSender(
+            TemplateEngine engine,
+            @Value("${RESEND_API_KEY}") String apiKey
+    ) {
+        this.engine = engine;
+        this.resend = new Resend(apiKey);
+    }
 
     public void sendEmail(UserDto userDto, int otp) {
 
-        Context context = new Context();
-        context.setVariable("otp", otp);
-        context.setVariable("name", userDto.getName());
-
-        String text = engine.process("email-template.html", context);
-
         try {
-            MimeMessage message = mailSender.createMimeMessage();
-            MimeMessageHelper helper = new MimeMessageHelper(message, true);
+            // 1. Build Thymeleaf context
+            Context context = new Context();
+            context.setVariable("name", userDto.getName());
+            context.setVariable("otp", otp);
 
-            helper.setFrom(from);
-            helper.setTo(userDto.getEmail());
-            helper.setSubject("OTP Verification");
-            helper.setText(text, true);
+            // 2. Render HTML (YOUR EXISTING TEMPLATE)
+            String html = engine.process("email-template", context);
 
-            mailSender.send(message);
+            // 3. Send email via Resend
+            SendEmailRequest request = SendEmailRequest.builder()
+                    .from("ShopEase <onboarding@resend.dev>")
+                    .to(userDto.getEmail())
+                    .subject("OTP Verification")
+                    .html(html)
+                    .build();
+
+            resend.emails().send(request);
 
         } catch (Exception e) {
             e.printStackTrace();
