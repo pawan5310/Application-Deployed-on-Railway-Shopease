@@ -12,42 +12,37 @@ import com.resend.services.emails.model.SendEmailRequest;
 @Component
 public class EmailSender {
 
-    private final Resend resend;
+    @Autowired
+    private JavaMailSender mailSender;
 
-    private final TemplateEngine engine;
+    @Autowired
+    private TemplateEngine engine;
 
-    public EmailSender(
-            TemplateEngine engine,
-            @Value("${RESEND_API_KEY}") String apiKey
-    ) {
-        this.engine = engine;
-        this.resend = new Resend(apiKey);
-    }
+    @Value("${spring.mail.username}")
+    private String from;
 
+    @Async   // IMPORTANT
     public void sendEmail(UserDto userDto, int otp) {
 
         try {
-            // 1. Build Thymeleaf context
             Context context = new Context();
             context.setVariable("name", userDto.getName());
             context.setVariable("otp", otp);
 
-            // 2. Render HTML (YOUR EXISTING TEMPLATE)
             String html = engine.process("email-template", context);
 
-            // 3. Send email via Resend
-            SendEmailRequest request = SendEmailRequest.builder()
-                    .from("ShopEase <onboarding@resend.dev>")
-                    .to(userDto.getEmail())
-                    .subject("OTP Verification")
-                    .html(html)
-                    .build();
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-            resend.emails().send(request);
+            helper.setFrom("onboarding@resend.dev");
+            helper.setTo(userDto.getEmail());
+            helper.setSubject("OTP Verification");
+            helper.setText(html, true);
+
+            mailSender.send(message);
 
         } catch (Exception e) {
-            e.printStackTrace();
-            throw new RuntimeException("Failed to send OTP email");
+            e.printStackTrace(); // LOG ONLY
         }
     }
 }
