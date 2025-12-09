@@ -15,35 +15,37 @@ import jakarta.mail.internet.MimeMessage;
 @Component
 public class EmailSender {
 
-	@Autowired
-	JavaMailSender mailSender;
+    @Autowired
+    private JavaMailSender mailSender;
 
-	@Autowired
-	TemplateEngine engine;
+    @Autowired
+    private TemplateEngine engine;
 
-	@Value("${spring.mail.username}")
-	String from;
+    @Value("${spring.mail.username}")
+    private String from;
 
-	public void sendEmail(UserDto userDto, int otp) {
+    public void sendEmail(UserDto userDto, int otp) {
 
-		Context context = new Context();
-		context.setVariable("otp", otp);
-		context.setVariable("name", userDto.getName());
+        Context context = new Context();
+        context.setVariable("otp", otp);
+        context.setVariable("name", userDto.getName());
 
-		String text = engine.process("email-template.html", context);
+        String text = engine.process("email-template.html", context);
 
-		try {
-			MimeMessage message = mailSender.createMimeMessage();
-			MimeMessageHelper helper = new MimeMessageHelper(message);
+        try {
+            MimeMessage message = mailSender.createMimeMessage();
+            MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-			helper.setFrom(from, "Ecommerce Application");
-			helper.setTo(userDto.getEmail());
-			helper.setSubject("OTP verification");
-			helper.setText(text, true);
+            helper.setFrom(from);
+            helper.setTo(userDto.getEmail());
+            helper.setSubject("OTP Verification");
+            helper.setText(text, true);
 
-			mailSender.send(message);
-		} catch (Exception e) {
-			System.err.println("OTP Sending to Email Failed but the otp is : " + otp);
-		}
-	}
+            mailSender.send(message);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException("Failed to send OTP email");
+        }
+    }
 }
